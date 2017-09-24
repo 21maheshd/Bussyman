@@ -1,0 +1,62 @@
+[{
+    "CompanyName": "Midas Blue",
+    "OwnerName": "John Blue",
+    "ContactPersonName": "Michael Jordan",
+    "AreaOfBusiness": "Salon & Beauty",
+    "Speciality": "Hair Specialist, Beauty & SPA",
+    "Experience": "10",
+    "MainCategory": "Salon",
+    "Categories": "Salon & Beauty",
+    "SubCategories": [
+        "Hair Stylist",
+        "Spa",
+        "Makeup",
+        "Unisex Salon"
+    ],
+    "registerDate": "21 Jan 2000",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "Area": "Baner",
+    "SubArea": [
+        "Aundh"
+    ],
+    "PrimaryServices": [
+        "Hair Cut",
+        "Spa",
+        "Makeup artist"
+    ],
+    "ValueAddedServices": [
+        "Wedding Makeup",
+        "Online Booking"
+    ],
+    "FreeServices": [
+        "Makeup Tips",
+        "Hair Grow Tips"
+    ],
+    "WorkingTime": "Mon - Sat 10am to 9pm",
+    "HolidayDays": "Sun",
+    "ContactNumber1": "444464464",
+    "ContactNumber2": "44138484",
+    "ContactNumber3": "2143213213",
+    "RegistrationNo": "1323",
+    "Order": "10",
+    "Tags": "Hair Specialist, Beauty & SPA in Baner",
+    "Address1": "Q1 Street Baner",
+    "Address2": "Pune",
+    "UserId": "5",
+    "Ratings": {
+        "star1": 2,
+        "star2": 3,
+        "star3": 5,
+        "star4": 2,
+        "star5": 7
+    },
+    "ProfilePic": "http://www.kenrockwell.com/nikon/images1/18-300mm/D7K_0761-macro.jpg",
+    "Socical": {
+        "facebook": "",
+        "twitter": "",
+        "google": "",
+        "Youtube": "",
+        "instagram": ""
+    }
+}]
