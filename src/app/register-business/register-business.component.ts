@@ -18,7 +18,9 @@ export class RegisterBusinessComponent implements OnInit {
 
 register(model:any) {
     console.log(model);
-    this.userService.create(this.userModel);
+    this.userService.addClientWithObservable(model).subscribe((data) => {
+        console.log("what is in the data ", data);
+      });
     }
 
   ngOnInit() {

@@ -7,25 +7,34 @@ export class UserService {
     constructor(private http: Http) { }
 
     getCountries(): any {
-        var d =  this.http.get("./assets/clientData.json").map((response: Response) => <any>response.json());
+        var d =  this.http.get("http://localhost:3000/Clients").map((response: Response) => <any>response.json());
         console.log(d);
         return d;
     }
-
-
 
     getProducts(): Observable<any> {
-        var d = this.http.get('./assets/clientData.json').map((response: Response) => <any>response.json());
+        var d = this.http.get('http://localhost:3000/Clients').map((response: Response) => <any>response.json());
         console.log(d);
         return d;
     }
 
-    create(user: any) {
-        this.jsonData.push(user);
-        console.log(this.jsonData);
-        return true;
+    addClientWithObservable(client:any): any {
+        return this.http.post('http://localhost:3000/Clients', client).map((response: Response) => response.json());
     }
-
+    
+    private extractData(res: Response) {
+	let body = res.json();
+        return body.data || {};
+    }
+    private handleErrorObservable (error: Response | any) {
+	console.error(error.message || error);
+	return Observable.throw(error.message || error);
+    }
+    private handleErrorPromise (error: Response | any) {
+	console.error(error.message || error);
+	return Promise.reject(error.message || error);
+    }	
+    
     //    update(user: User) {
     //        return this.http.put('/api/users/' + user.id, user, this.jwt()).map((response: Response) => response.json());
     //    }
